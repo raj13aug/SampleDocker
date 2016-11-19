@@ -1,6 +1,6 @@
 FROM ruby:2.3.1-slim
 MAINTAINER Nataraj Devops Team
-RUN apt-get update -qq && apt-get install -y build-essential
+RUN apt-get update -qq && apt-get install -y build-essential git
 
 ENV APP_ROOT /var/www/docker
 RUN mkdir -p $APP_ROOT
