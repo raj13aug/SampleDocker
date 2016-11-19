@@ -6,7 +6,7 @@ ENV APP_ROOT /var/www/docker
 RUN mkdir -p $APP_ROOT
 WORKDIR $APP_ROOT
 RUN git clone https://github.com/raj13aug/SampleDocker /var/www/docker
-RUN cd /root/nataraj;bundle install
+RUN cd /var/www/docker;bundle install
 ADD . $APP_ROOT
 
 EXPOSE 80
