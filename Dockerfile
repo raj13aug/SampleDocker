@@ -9,5 +9,5 @@ RUN git clone https://github.com/raj13aug/SampleDocker /var/www/docker
 RUN cd /var/www/docker;bundle install
 ADD . $APP_ROOT
 
-EXPOSE 80
-CMD ["bundle", "exec", "rackup", "config.ru", "-p", "80", "-s", "thin", "-o", "0.0.0.0"]
+EXPOSE 81
+CMD ["bundle", "exec", "rackup", "config.ru", "-p", "81", "-s", "thin", "-o", "0.0.0.0"]
