@@ -1,5 +1,5 @@
 
-
+wget -qO- https://get.docker.com/ | sh
 
 docker build -t sampleruby .
 
